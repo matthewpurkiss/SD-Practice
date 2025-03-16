@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-// document.body.style.backgroundColor="white"
-// fetch('https://api.chucknorris.io/jokes/random')
-// .then((test) => test.json())
-// .then((test2)=>{
-//     console.log(test2)
-//     handle(test2)
-// }
-// )
+document.body.style.backgroundColor="white"
+fetch('https://api.chucknorris.io/jokes/random')
+.then((test) => test.json())
+.then((test2)=>{
+    console.log(test2)
+    handle(test2)
+}
+)
 
-// const handle=(deets)=> {
-// document.querySelector('p').innerText=deets.value
-// document.querySelector('img').src =deets.icon_url
-// }
+const handle=(deets)=> {
+document.querySelector('p').innerText=deets.value
+document.querySelector('img').src =deets.icon_url
+}
 const name=document.querySelector('input')
 const button=document.querySelector('button')
 const avatarContainer = document.createElement("div")
